@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Tela de Login</title>
+</head>
+
+<body>
+    <header>
+        <a href="#">Login.</a>
+    </header>
+
+    <main>
+        <section class="container">
+            <section class="login-part">
+                <h1>Acesse sua conta</h1>
+                <form>
+                    <div class="textfild">
+                        <label for="">Usuário</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="textfild">
+                        <label for="">Senha</label>
+                        <input type="password">
+                    </div>
+                </form>
+                <div>
+                    <a href="#">Esqueceu sua senha?</a>
+                    <button id="btn-login">Login</button>
+                </div>
+            </section>
+
+            <span class="mid"></span>
+
+            <section class="register-part">
+
+                <div class="register-part-1">
+                    <h2>Faça parte da nossa comunidade!</h2>
+                    <figure>
+                        <img id="img-astronauta" src="img/astronaut-suit-animate (1).svg" alt="astronauta">
+                    </figure>
+                    <button id="btn-1" onclick="onPart1()">Registre-se</button>
+                </div>
+
+                <div class="register-part-2 display">
+                    <h2>Cadastre-se e participe da nossa comunidade!</h2>
+                    <form>
+                        <div class="textfild">
+                            <label for="">Nome de Usuário</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="textfild">
+                            <label for="">Crie uma senha</label>
+                            <input type="password">
+                        </div>
+
+                        <div class="textfild">
+                            <label for="">Digite novamente a senha</label>
+                            <input type="password">
+                        </div>
+                    </form>
+                    <button id="btn-registrar">Resgistrar</button>
+                </div>
+            </section>
+
+            <button id="btn-back" onclick="onPart2()"><i class='bx bx-arrow-back'></i></button>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

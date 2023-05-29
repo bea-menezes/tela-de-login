@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    outline: none;
+}
+
+:root{
+    --text-color-while: white;
+}
+
+body{
+    width: 100vw;
+    height: 100vh; 
+
+    background: linear-gradient(to right ,black, rgb(81, 36, 83), rgb(0, 0, 0));
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 9%;
+}
+
+header a{
+    color: var(--text-color-while);
+    font-weight: 700;
+    font-size: 40px;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+/*  CONTAINER GERAL*/
+.container{
+    background-color: rgba(29, 32, 66, 0.459);
+    border-radius: 15px;
+    border-top: 10px solid blueviolet;
+    border-bottom: 10px solid blueviolet;
+
+    width: 900px;
+    height: 500px;
+    padding: 10px 20px;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid white; */
+    position: relative;
+}
+
+#btn-back{
+    display: none;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    width: 5%;
+    height: 9%;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(107, 38, 163);
+}
+
+#btn-back:hover{
+    background-color: rgb(198, 53, 203);
+    cursor: pointer;
+}
+
+#icon-back{
+    z-index: 100;
+}
+
+/* ESTILIZAÇÃO GERAL DOS TEXTFIELD */
+.textfild{
+    color: var(--text-color-while);
+    padding: 10px 20px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textfild input{
+    border-radius: 10px;
+    border: none;
+    padding: 7px;
+    margin-top: 10px;
+    background-color: rgba(181, 201, 219, 0.582);
+    color: var(--text-color-while);
+}
+
+/* CONTAINER LOGIN */
+
+.login-part{
+    /* border: 1px solid white; */
+    height: 90%;
+    max-width: 40%;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    
+}
+
+.login-part h1{
+    font-size: 30px;
+    color: var(--text-color-while);
+}
+
+.login-part a{
+    color: rgb(65, 142, 209);
+    margin-right: 10px;
+    /* margin-right: 20px; */
+}
+
+.login-part #btn-login{
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: rgb(50, 94, 189);
+    color: var(--text-color-while);
+    align-self: flex-end;
+}
+
+.login-part #btn-login:hover{
+    background-color: blueviolet;
+}
+/* FIM LOGIN  */
+
+/* CONTAINER LINHA MID */
+.mid{
+    border: 1px solid rgba(255, 255, 255, 0.342);
+    height: 90%;
+}
+/* FIM LINHA MID */
+
+/* CONTAINER RESGISTRO GERAL*/
+.register-part{
+    /* border: 1px solid white; */
+    height: 90%;
+    width: 40%;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    position: relative;
+}
+
+.register-part h2{
+    color: rgb(173, 92, 219);
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.register-part label{
+    color: rgb(220, 161, 255);
+}
+
+.register-part #btn-registrar{
+    position: absolute;
+    right: 20px;
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(107, 38, 163);
+    color: var(--text-color-while);
+    margin-top: 20px;
+}
+
+.register-part #btn-registrar:hover{
+    background-color: rgba(224, 62, 224, 0.747);
+}
+
+
+/* REGISTRO PARTE 1 */
+.register-part-1{
+    display: block;
+}
+
+figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-part-1 figure img{
+    height: 300px;
+}
+
+#btn-1{
+    background-color: rgb(107, 38, 163);
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+    padding: 10px 20px;
+    position: absolute;
+    right: 0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#btn-1:hover{
+    background-color: rgba(224, 62, 224, 0.747);
+}
+
+#back{
+    border-radius: 50%;
+}
+
+/* REGISTRO PARTE 2 */
+.register-part-2{
+    display: none;
+
+}
+
+
