@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -8,14 +8,14 @@
     outline: none;
 }
 
-:root{
+:root {
     --text-color-while: white;
 }
 
-body{
+body {
     width: 100vw;
-    height: 100vh; 
-    background: linear-gradient(to right ,black, rgb(81, 36, 83), rgb(0, 0, 0));
+    height: 100vh;
+    background: linear-gradient(to right, black, rgb(81, 36, 83), rgb(0, 0, 0));
 
     display: flex;
     justify-content: center;
@@ -24,20 +24,22 @@ body{
     padding: 10px 20px;
 }
 
-header{
+header {
     position: fixed;
+    text-align: left;
     top: 0;
     left: 0;
     padding: 10px 9%;
+    margin-top: 50px;
 }
 
-header a{
+header a {
     color: var(--text-color-while);
     font-weight: 700;
     font-size: 40px;
 }
 
-main{
+main {
     width: 100%;
     height: 100%;
 
@@ -49,7 +51,7 @@ main{
 
 
 /*  CONTAINER GERAL*/
-.container{
+.container {
     background-color: rgba(29, 32, 66, 0.459);
     border-radius: 15px;
     border-top: 10px solid blueviolet;
@@ -58,7 +60,7 @@ main{
     width: 900px;
     height: 500px;
     padding: 10px 20px;
-    
+
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -66,7 +68,7 @@ main{
     position: relative;
 }
 
-#btn-back{
+#btn-back {
     display: none;
     position: absolute;
     right: 20px;
@@ -78,17 +80,17 @@ main{
     background-color: rgb(107, 38, 163);
 }
 
-#btn-back:hover{
+#btn-back:hover {
     background-color: rgb(198, 53, 203);
     cursor: pointer;
 }
 
-#icon-back{
+#icon-back {
     z-index: 100;
 }
 
 /* ESTILIZAÇÃO GERAL DOS TEXTFIELD */
-.textfild{
+.textfild {
     color: var(--text-color-while);
     padding: 10px 20px;
 
@@ -97,7 +99,7 @@ main{
     flex-direction: column;
 }
 
-.textfild input{
+.textfild input {
     border-radius: 10px;
     border: none;
     padding: 7px;
@@ -108,29 +110,29 @@ main{
 
 /* CONTAINER LOGIN */
 
-.login-part{
+.login-part {
     /* border: 1px solid white; */
     height: 90%;
-    max-width: 40%;
+    /* max-width: 40%; */
 
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    
+
 }
 
-.login-part h1{
+.login-part h1 {
     font-size: 30px;
     color: var(--text-color-while);
 }
 
-.login-part a{
+.login-part a {
     color: rgb(65, 142, 209);
     margin-right: 10px;
     /* margin-right: 20px; */
 }
 
-.login-part #btn-login{
+.login-part #btn-login {
     width: 150px;
     height: 35px;
     border-radius: 5px;
@@ -144,20 +146,22 @@ main{
     align-self: flex-end;
 }
 
-.login-part #btn-login:hover{
+.login-part #btn-login:hover {
     background-color: blueviolet;
 }
+
 /* FIM LOGIN  */
 
 /* CONTAINER LINHA MID */
-.mid{
+.mid {
     border: 1px solid rgba(255, 255, 255, 0.342);
     height: 90%;
 }
+
 /* FIM LINHA MID */
 
 /* CONTAINER RESGISTRO GERAL*/
-.register-part{
+.register-part {
     /* border: 1px solid white; */
     height: 90%;
     width: 40%;
@@ -169,17 +173,17 @@ main{
     position: relative;
 }
 
-.register-part h2{
+.register-part h2 {
     color: rgb(173, 92, 219);
     text-align: left;
     margin-bottom: 20px;
 }
 
-.register-part label{
+.register-part label {
     color: rgb(220, 161, 255);
 }
 
-.register-part #btn-registrar{
+.register-part #btn-registrar {
     position: absolute;
     right: 20px;
     width: 150px;
@@ -192,27 +196,26 @@ main{
     margin-top: 20px;
 }
 
-.register-part #btn-registrar:hover{
+.register-part #btn-registrar:hover {
     background-color: rgba(224, 62, 224, 0.747);
 }
 
-
 /* REGISTRO PARTE 1 */
-.register-part-1{
+.register-part-1 {
     display: block;
 }
 
-figure{
+figure {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.register-part-1 figure img{
+.register-part-1 figure img {
     height: 300px;
 }
 
-#btn-1{
+#btn-1 {
     background-color: rgb(107, 38, 163);
     border: none;
     border-radius: 5px;
@@ -224,24 +227,140 @@ figure{
     cursor: pointer;
 }
 
-#btn-1:hover{
+#btn-1:hover {
     background-color: rgba(224, 62, 224, 0.747);
 }
 
-#back{
+#back {
     border-radius: 50%;
 }
 
 /* REGISTRO PARTE 2 */
-.register-part-2{
+.register-part-2 {
     display: none;
 
 }
 
 /* FOOTER */
 
-footer{
+footer {
     color: aliceblue;
 }
 
+/* Media query */
+/* outros modos de media query */
+/* screen, print, speech, all */
+@media screen and (max-width: 500px) {
 
+    /* MAX WIDTH = TELAS MENORES QUE ALGUMA RESOLUCAO */
+    body {
+        background: linear-gradient(to top, black, rgb(81, 36, 83), rgb(0, 0, 0));
+        min-height: 100vh;
+    }
+
+    header {
+        padding: 5px;
+        margin: 20px 50px;
+    }
+
+    header a {
+        color: var(--text-color-while);
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    main {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .textfild {
+        color: var(--text-color-while);
+        display: flex;
+        justify-self: center;
+        flex-direction: column;
+    }
+    
+    .textfild input {
+        width: 100%;
+        border-radius: 10px;
+        border: none;
+        margin-top: 10px;
+        background-color: rgba(181, 201, 219, 0.582);
+        color: var(--text-color-while);
+    }
+
+    .text-esqueceu-senha-btn{
+        display: flex;
+        justify-self: center;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+
+    .container{
+        width: 95%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .login-part {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .login-part h1 {
+        margin: 30px 10px;
+        font-size: 20px;
+        color: var(--text-color-while);
+    }
+
+    #img-astronauta{
+        height: 90px;
+    }
+
+    .login-part a {
+        color: rgb(65, 142, 209);
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .login-part #btn-login {
+        width: 90px;
+        height: 25px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        font-weight: 700;
+        background-color: rgb(50, 94, 189);
+        color: var(--text-color-while);
+        align-self: flex-end;
+    }
+    
+    .login-part #btn-login:hover {
+        background-color: blueviolet;
+    }
+
+    .mid{
+        display: none;
+    }
+
+    .register-part-1{
+        display: none;
+    }
+
+    .register-part-2{
+        display: none;
+    }
+    
+
+}

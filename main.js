@@ -1,4 +1,3 @@
-
 function onPart1() {
     var part1 = document.querySelector('.register-part-1');
     var part2 = document.querySelector('.register-part-2');
