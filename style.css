@@ -15,8 +15,13 @@
 body{
     width: 100vw;
     height: 100vh; 
-
     background: linear-gradient(to right ,black, rgb(81, 36, 83), rgb(0, 0, 0));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 20px;
 }
 
 header{
@@ -231,6 +236,12 @@ figure{
 .register-part-2{
     display: none;
 
+}
+
+/* FOOTER */
+
+footer{
+    color: aliceblue;
 }
 
 
